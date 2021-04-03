@@ -1,6 +1,9 @@
 **PART 1: TDD RSPEC :** 
 
 **SET UP AND INSTALLATION FOR RSPEC:** 
+gem install rspec
+bundle install
+rails generate rspec:install
 
 
 
@@ -58,3 +61,5 @@ rspec ./spec/controllers/Quotes_controller_spec.rb
 
 **To Run JEST test:**
 npm run test
+
+After testing it is too messy to have both in same folder so I decided to have Jest on a separate folder.  
