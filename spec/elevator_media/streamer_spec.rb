@@ -4,6 +4,10 @@ require 'elevator_media/Streamer'
 require 'date'
 require 'rest-client'
 require 'open_weather'
+require 'json'
+require 'openssl'
+require 'net/http'
+require 'uri'
 
 describe ElevatorMedia::Streamer do
 
@@ -27,7 +31,16 @@ describe ElevatorMedia::Streamer do
             streamer.getContent('weather')
         end
     end
-
+     # Test the response of the method : getMarketMover
+     context "getMarketMover Test: Check the call of the method" do
+        it "Test the call of the method getMarketMover ?" do
+            html = streamer.getContent("MarketMover") 
+            puts html
+            expect(streamer).to respond_to(:getContent)  
+            # expect(html).to_not eq(nil)
+            # expect(html).to be_a(String)   
+        end
+    end
 
 
     

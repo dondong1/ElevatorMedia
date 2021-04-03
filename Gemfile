@@ -136,3 +136,7 @@ gem 'open_weather'
 
 # Using rest-client
 gem 'rest-client'
+# Using 
+gem 'uri'
+gem 'openssl'
+gem 'json'
